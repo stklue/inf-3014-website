@@ -221,11 +221,10 @@
 
 .cart-content-wrapper {
   display: flex;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
+  height: 100%;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
@@ -236,7 +235,7 @@
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   background-color: #ffffff;
-  width: 75%;
+  width: 100%;
   height: 100%;
 
 }
@@ -343,7 +342,7 @@
   padding: 2.5rem;
   border-width: 1px;
   border-color: #d1d5db;
-  width: 33.333333%;
+  width: 100%;
 }
 
 .summary-wrapper h1 {

@@ -13,8 +13,8 @@ const cartItems = [item1, item2, item3]
 
 <template>
   <div class="cart-wrapper">
-    <div class="cart-content-wrapper">
-      <div class="cart-left-items space-y-2">
+    <div class="cart-content-wrapper flex-col lg:px-20 md:px-20">
+      <div class="cart-left-items space-y-2 lg:w-3/4 md:w-3/4">
         <div class="cart-left-items-text">
           <h1>Shopping Cart</h1>
           <h2>
@@ -25,24 +25,21 @@ const cartItems = [item1, item2, item3]
 
 
         <div class="flex pb-9 items-center hover:bg-gray-100 mx-1 my-2 h-24 space-x-5">
-          <!-- Image -->
+     
           <div class="flex h-full w-1/3 lg:w-1/6 p-2">
             <img class="product-img" src="../assets/images/fur-2.jpg" alt="" />
           </div>
 
-          <!-- Product details -->
+    
           <div class="flex h-full w-2/3 lg:w-full flex-col justify-between">
             <div class="flex flex-col justify-between">
-              <!-- <router-link :to="`/brand/${item.cat}/${item.id}`"> -->
               <span class="font-bold text-sm">Furniture 2</span>
-              <!-- </router-link> -->
               <div class="flex space-x-5 lg:justify-start">
                 <span class="text-center font-semibold text-xs text-gray-400">R1200.00</span>
-                <!-- <span class="text-red-500 text-xs">{{ item.data.size }}</span> -->
               </div>
             </div>
 
-            <!-- Incr and Decr and Trash/Remove -->
+          
             <div class="flex justify-between pr-5">
               <div class="flex">
                 <svg class="fill-current text-gray-600 w-5 h-5 rounded-lg border-2 p-1" viewBox="0 0 448 512">
@@ -65,22 +62,17 @@ const cartItems = [item1, item2, item3]
         </div>
 
         <div class="flex items-center hover:bg-gray-100 mx-1 my-2 h-24 space-x-5 pt-20">
-          <!-- Image -->
           <div class="flex h-full w-1/3 lg:w-1/6 p-2">
             <img class="product-img" src="../assets/images/decor-2.jpg" alt="" />
           </div>
           <div class="flex h-full w-2/3 lg:w-full flex-col justify-between">
             <div class="flex flex-col justify-between">
-              <!-- <router-link :to="`/brand/${item.cat}/${item.id}`"> -->
               <span class="font-bold text-sm">Decor Item 2</span>
-              <!-- </router-link> -->
               <div class="flex space-x-5 lg:justify-start">
                 <span class="text-center font-semibold text-xs text-gray-400">R400.00</span>
-                <!-- <span class="text-red-500 text-xs">{{ item.data.size }}</span> -->
               </div>
             </div>
 
-            <!-- Incr and Decr and Trash/Remove -->
             <div class="flex justify-between pr-5">
               <div class="flex">
                 <svg class="fill-current text-gray-600 w-5 h-5 rounded-lg border-2 p-1" viewBox="0 0 448 512">
@@ -102,7 +94,7 @@ const cartItems = [item1, item2, item3]
           </div>
         </div>
 
-        <!-- Continue shopping routing -->
+       
         <router-link :to="{ name: 'Home' }" class="flex font-semibold text-[#382a1d] text-sm mt-10 pt-44">
           <svg class="fill-current mr-2 text-[#382a1d] w-4" viewBox="0 0 448 512">
             <path

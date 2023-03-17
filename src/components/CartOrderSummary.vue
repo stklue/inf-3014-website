@@ -3,7 +3,7 @@ import "../index.css";
 </script>
 
 <template>
-  <div id="summary" class="summary-wrapper  ">
+  <div id="summary" class="summary-wrapper  lg:w-1/3 md:w-1/3 ">
     <h1>Order Summary</h1>
     <div class="subtotal-wrapper ">
       <span>Subtotal</span>
