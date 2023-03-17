@@ -20,7 +20,7 @@ const closeConfirm = () => {
     <nav class="nav-wrapper">
         <!-- Logo -->
         <router-link :to="{ name: 'Home' }">
-            <h1 class="logo text-lg">HuisGoed</h1>
+            <h1 class="logo text-lg">HuisGoed </h1>
         </router-link>
         <!-- Search Bar -->
             <div class="block md:hidden lg:hidden">
