@@ -13,7 +13,7 @@ const cartItems = [item1, item2, item3]
 
 <template>
   <div class="cart-wrapper">
-    <div class="cart-content-wrapper flex-col lg:px-20 md:px-20">
+    <div class="cart-content-wrapper flex-col lg:flex-row md:flex-row lg:px-20 md:px-20">
       <div class="cart-left-items space-y-2 lg:w-3/4 md:w-3/4">
         <div class="cart-left-items-text">
           <h1>Shopping Cart</h1>
