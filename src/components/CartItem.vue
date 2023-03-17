@@ -8,7 +8,7 @@ interface Props {
 }
 const props = defineProps<Props>();
 
-const item = { id: 1, image: "/src/assets/images/fur-1.jpg", cat: "Firniture", name: "Chair", price: 300, quantity: 2 };
+const item = { id: 1, image: "../assets/images/fur-1.jpg", cat: "Firniture", name: "Chair", price: 300, quantity: 2 };
 
 </script>
 
