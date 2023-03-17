@@ -19,7 +19,6 @@
 }
 /* Mobile */
 @media (min-width: 640px) {
-
 }
 /* NavBar Component */
 
@@ -233,11 +232,13 @@
 
 .cart-left-items {
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 5.5rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   background-color: #ffffff;
   width: 75%;
+  height: 100%;
+
 }
 
 .cart-left-items-text {
