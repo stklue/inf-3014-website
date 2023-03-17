@@ -422,6 +422,8 @@ label {
 .order-confirm-wrapper {
   display: flex;
   padding-top: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
