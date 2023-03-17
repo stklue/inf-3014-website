@@ -44,47 +44,6 @@ for (let index = 0; index < 5; index++) {
   };
   decors.push(element);
 }
-// [
-//     {
-//         id: 64,
-//         name: "Knives and Fork Set",
-//         category: "Decor",
-//         quantity: 2,
-//          image: "/src/assets/images/kitchen.jpg",
-//         price: 300
-//       },
-//       {
-//         id: 34,
-//         name: "Knives and Fork Set",
-//         category: "Decor",
-//         quantity: 2,
-//          image: "/src/assets/images/kitchen.jpg",
-//         price: 300
-//       },
-//       {
-//         id: 813,
-//         name: "Knives and Fork Set",
-//         category: "Decor",
-//         quantity: 2,
-//          image: "/src/assets/images/kitchen.jpg",
-//         price: 300
-//       },
-//       {
-//         id: 14,
-//         name: "Knives and Fork Set",
-//         category: "Decor",
-//         quantity: 2,
-//          image: "/src/assets/images/kitchen.jpg",
-//         price: 300
-//       },
-//       {
-//         id: 15,
-//         name: "Knives and Fork Set",
-//         category: "Decor",
-//         quantity: 2,
-//          image: "/src/assets/images/kitchen.jpg",
-//         price: 300
-//       },
-// ];
+
 
 export { furnitures, kitchenware, decors };

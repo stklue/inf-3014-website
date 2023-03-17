@@ -13,18 +13,62 @@ const products = ref(furnitures);
             <button class="category-btn">See All</button>
         </div>
         <div class="product-wrapper flex-wrap">
-            <div v-for="prod in products" :key="prod.id">
-                <router-link :to="`/category/furniture/${prod.id}`">
-                    <div class="product">
-                        <img class="product-img" :src="prod.image" alt="" />
-                        <div class="p-5">
-                            <h5 class="product-name">{{ prod.name }}</h5>
-                            <p class=" ">R{{ prod.price }}.00</p>
-                            <button class="product-add-btn">Add to cart</button>
-                        </div>
+            <router-link :to="`/category/furniture/Furniture 1`">
+                <div class="product">
+                    <img class="product-img" src="../assets/images/fur-1.jpg" alt="" />
+                    <div class="p-5">
+                        <h5 class="product-name">Furniture 1</h5>
+                        <p class=" ">R250.00</p>
+                        <button class="product-add-btn">Add
+                            to cart</button>
                     </div>
-                </router-link>
-            </div>
+                </div>
+            </router-link>
+            <router-link :to="`/category/furniture/Furniture 2`">
+                <div class="product">
+                    <img class="product-img" src="../assets/images/fur-2.jpg" alt="" />
+                    <div class="p-5">
+                        <h5 class="product-name">Furniture 2</h5>
+                        <p class=" ">R250.00</p>
+                        <button class="product-add-btn">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </router-link>
+            <router-link :to="`/category/furniture/Furniture 3`">
+                <div class="product">
+                    <img class="product-img" src="../assets/images/fur-3.jpg" alt="" />
+                    <div class="p-5">
+                        <h5 class="product-name">Furniture 3</h5>
+                        <p class=" ">R250.00</p>
+                        <button class="product-add-btn">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </router-link>
+            <router-link :to="`/category/furniture/Furniture 4`">
+                <div class="product">
+                    <img class="product-img" src="../assets/images/fur-4.jpg" alt="" />
+                    <div class="p-5">
+                        <h5 class="product-name">Furniture 4</h5>
+                        <p class=" ">R250.00</p>
+                        <button class="product-add-btn">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </router-link>
+            <router-link :to="`/category/furniture/Furniture 5`">
+                <div class="product">
+                    <img class="product-img" src="../assets/images/fur-5.jpg" alt="" />
+                    <div class="p-5">
+                        <h5 class="product-name">Furniture 5</h5>
+                        <p class=" ">R250.00</p>
+                        <button class="product-add-btn">Add
+                            to cart</button>
+                    </div>
+                </div>
+            </router-link>
+           
         </div>
     </div>
 </template>
