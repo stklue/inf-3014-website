@@ -1,0 +1,573 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Media Queries */
+/* Laptops */
+@media (min-width: 1024px) {
+  .lg\:text-3xl {
+    font-size: 1.875rem /* 30px */;
+    line-height: 2.25rem /* 36px */;
+  }
+}
+/* Tablets */
+@media (min-width: 768px) {
+  .md\:text-2xl {
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+  }
+}
+/* Mobile */
+@media (min-width: 640px) {
+
+}
+/* NavBar Component */
+
+.nav-wrapper {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  padding: 1.25rem;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  background-color: #decbb1;
+}
+
+.logo {
+  /* font-size: 2rem; */
+  -webkit-text-stroke: 1px #382a1d;
+}
+
+.search-bar-wrapper {
+  display: none;
+  justify-content: center;
+  width: 100%;
+  border: none;
+}
+
+::placeholder {
+  color: #382a1d;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #382a1d;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #382a1d;
+}
+
+.search-label {
+  margin-bottom: 0.5rem;
+  color: #382a1d;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.search-icon {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding-left: 0.75rem;
+  align-items: center;
+  pointer-events: none;
+}
+
+.search-input {
+  padding: 1rem;
+  padding-left: 2.5rem;
+  background-color: #d5bda3;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 100%;
+  border-width: 0 0 1px 0;
+  border-color: #382a1d;
+}
+
+.right-nav-wrapper {
+  display: none;
+  margin-left: 1.5rem;
+  justify-content: space-between;
+}
+
+.right-nav-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.right-nav-icon-label {
+  color: #382a1d;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+/* Decor - Furniture - Kitchenware Category */
+
+.category-wrapper {
+  display: flex;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2.5rem;
+  flex-direction: column;
+  color: #382a1d;
+}
+
+.category-heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category-btn {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-bottom: 0.5rem;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+  color: #382a1d;
+  border-width: 1px;
+}
+
+.category-btn:hover {
+  background-color: #382a1d;
+  color: #ffffff;
+}
+
+.product-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.product {
+  margin-left: 1rem;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+  width: 12rem;
+  border-color: #decbb1;
+  cursor: pointer;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.product:hover {
+  background-color: #f2e4cf;
+  transform: scale(1.05);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.product-img {
+  width: 100%;
+  height: 8rem;
+}
+
+.product-name {
+  margin-bottom: 0.5rem;
+  color: #382a1d;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.product-price {
+  margin-bottom: 0.75rem;
+  color: #382a1d;
+  font-weight: 400;
+}
+
+.product-add-btn {
+  padding: 1rem;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+  background-color: #382a1d;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+
+.product-add-btn:hover {
+  background-color: #ffffff;
+  color: #382a1d;
+}
+
+/* Shopping Cart */
+.cart-wrapper {
+  min-height: 100vh;
+  padding-top: 2.5rem;
+}
+
+.cart-content-wrapper {
+  display: flex;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.cart-left-items {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  background-color: #ffffff;
+  width: 75%;
+}
+
+.cart-left-items-text {
+  display: flex;
+  padding-bottom: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  justify-content: space-between;
+  border-bottom-width: 1px;
+}
+
+/* Product Detail for Kitchenware, Furniture, Decor */
+.product-detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2.5rem;
+}
+
+.product-detail-image {
+  width: 100%;
+  height: 100%;
+}
+
+.product-detail-form {
+  padding: 1.5rem;
+  flex-direction: column;
+  flex: 1 1 0%;
+  margin-top: 2.5rem;
+}
+
+/* flex flex-col gap-y-2 */
+.form-items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.form-items h1 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  flex: 1 1 auto;
+}
+
+.form-items h2 {
+  color: #6b7280;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.form-items h3 {
+  margin-top: 0.5rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  flex: none;
+  width: 100%;
+}
+
+.form-buy-btn {
+  display: flex;
+  background-color: #382a1d;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2.75rem;
+  padding: 1.5rem;
+}
+
+.form-add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2.75rem;
+  border-width: 1px;
+  border-color: #d1d5db;
+}
+
+.form-like-icon {
+  display: flex;
+  color: #9ca3af;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 2.75rem;
+  border-width: 1px;
+  border-color: #d1d5db;
+}
+
+/* Shopping Cart - CartOrderSummary */
+.summary-wrapper {
+  background-color: #decbb1;
+  color: #382a1d;
+  padding: 2.5rem;
+  border-width: 1px;
+  border-color: #d1d5db;
+  width: 33.333333%;
+}
+
+.summary-wrapper h1 {
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  border-bottom-width: 1px;
+}
+
+.subtotal-wrapper {
+  display: flex;
+  margin-bottom: 1.25rem;
+  margin-top: 2.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.promocode-text {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.apply-btn {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  background-color: #382a1d;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+}
+
+.apply-btn:hover {
+  background-color: #dc2626;
+}
+
+.checkout-btn {
+  padding: 1rem;
+  background-color: #ffffff;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-duration: 150ms;
+  transition-timing-function: linear;
+  color: #382a1d;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 100%;
+}
+
+.checkout-btn:hover {
+  background-color: #382a1d;
+  color: #ffffff;
+}
+
+/* OrderConfirmation Page  */
+.order-confirm-wrapper {
+  display: flex;
+  padding-top: 2.5rem;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.order-confirm-wrapper h1 {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.order-confirm-wrapper h2 {
+  padding: 0.75rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.order-home-link {
+  padding: 1.25rem;
+  margin: 1.25rem;
+  border-style: solid;
+  border-color: #382a1d;
+  border-width: 4px;
+}
+
+/* Terms And Conditions  */
+.tac-wrapper {
+  min-height: 100vh;
+  padding: 2.5rem;
+}
+
+.tac-wrapper h2 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+/* Contac Us */
+.contact-wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 768px;
+
+  @media (min-width: 1024px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.contact-wrapper h2 {
+  margin-bottom: 1rem;
+  color: #382a1d;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  text-align: center;
+}
+
+.contact-wrapper p {
+  margin-bottom: 2rem;
+  color: #6b7280;
+  font-weight: 300;
+  text-align: center;
+
+  @media (min-width: 640px) {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 4rem;
+  }
+}
+
+.contact-form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #382a1d;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+.contact-form-input {
+  display: block;
+  padding: 0.625rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #9ca3af;
+  width: 100%;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: #4b5563;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.contact-form-btn {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: #382a1d;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+/* About Us  */
+
+.about-us-wrapper {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-us-header {
+  color: #1f2937;
+  text-align: center;
+}
+
+.about-us-header h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.about-us-team-wrapper {
+  padding: 2.5rem;
+  margin: 2.5rem;
+  margin-bottom: 3rem;
+  background-color: #fafafa;
+  border-radius: 0.5rem;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
