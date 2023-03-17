@@ -3,10 +3,11 @@ import "/src/index.css";
 import CartItem from "../components/CartItem.vue";
 import CartOrderSummary from "../components/CartOrderSummary.vue";
 import { decors, furnitures, kitchenware } from "../utilities/products";
+import Product from '../utilities/products';
 
-const item1 = furnitures[1];
-const item2 = decors[1];
-const item3 = kitchenware[1];
+const item1 = {id: 1, name: "Furniture 1", image: "../assets/images/fur-3.jpg", price: 300, quantity: 2, category: "Furniture"} as Product;
+const item2 = {id: 2, name: "Decor Item 4", image: "../assets/images/decor-2.jpg", price: 1300, quantity: 2, category: "Decor"} as Product;
+const item3 = {id: 3, name: "Kitchenware 2", image: "../assets/images/kit-3.jpg", price: 200, quantity: 2, category: "Kitchenware"} as Product;
 
 const cartItems = [item1, item2, item3]
 </script>
