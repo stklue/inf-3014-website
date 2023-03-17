@@ -12,9 +12,9 @@ const products = ref(furnitures);
             <h2 class="pb-5 text-xl font-semibold">Furniture</h2>
             <button class="category-btn">See All</button>
         </div>
-        <div class="product-wrapper flex-wrap">
+        <div class="product-wrapper space-y-3 md:justify-evenly lg:justify-evenly flex-wrap">
             <router-link :to="`/category/furniture/Furniture 1`">
-                <div class="product">
+                <div class="product md:w-48 lg:w-48">
                     <img class="product-img" src="../assets/images/fur-1.jpg" alt="" />
                     <div class="p-5">
                         <h5 class="product-name">Furniture 1</h5>
@@ -25,7 +25,7 @@ const products = ref(furnitures);
                 </div>
             </router-link>
             <router-link :to="`/category/furniture/Furniture 2`">
-                <div class="product">
+                <div class="product md:w-48 lg:w-48">
                     <img class="product-img" src="../assets/images/fur-2.jpg" alt="" />
                     <div class="p-5">
                         <h5 class="product-name">Furniture 2</h5>
@@ -36,7 +36,7 @@ const products = ref(furnitures);
                 </div>
             </router-link>
             <router-link :to="`/category/furniture/Furniture 3`">
-                <div class="product">
+                <div class="product md:w-48 lg:w-48">
                     <img class="product-img" src="../assets/images/fur-3.jpg" alt="" />
                     <div class="p-5">
                         <h5 class="product-name">Furniture 3</h5>
@@ -47,7 +47,7 @@ const products = ref(furnitures);
                 </div>
             </router-link>
             <router-link :to="`/category/furniture/Furniture 4`">
-                <div class="product">
+                <div class="product md:w-48 lg:w-48">
                     <img class="product-img" src="../assets/images/fur-4.jpg" alt="" />
                     <div class="p-5">
                         <h5 class="product-name">Furniture 4</h5>
@@ -58,7 +58,7 @@ const products = ref(furnitures);
                 </div>
             </router-link>
             <router-link :to="`/category/furniture/Furniture 5`">
-                <div class="product">
+                <div class="product md:w-48 lg:w-48">
                     <img class="product-img" src="../assets/images/fur-5.jpg" alt="" />
                     <div class="p-5">
                         <h5 class="product-name">Furniture 5</h5>

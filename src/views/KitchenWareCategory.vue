@@ -12,9 +12,9 @@ const products = ref(kitchenware);
             <button class="category-btn">See All</button>
 
         </div>
-        <div class="product-wrapper flex-wrap">
+        <div class="product-wrapper space-y-3 md:justify-evenly lg:justify-evenly flex-wrap">
             <router-link :to="`/category/kitchenware/Kitchenware 1`">
-                <div class="product">
+                 <div class="product md:w-48 lg:w-48">
                     <img class="product-img" src="../assets/images/kit-1.jpg" alt="" />
                     <div class="p-5">
                         <h5 class="product-name">Kitchenware 1</h5>
@@ -25,7 +25,7 @@ const products = ref(kitchenware);
                 </div>
             </router-link>
             <router-link :to="`/category/kitchenware/Kitchenware 2`">
-                <div class="product">
+                 <div class="product md:w-48 lg:w-48">
                     <img class="product-img" src="../assets/images/kit-2.jpg" alt="" />
                     <div class="p-5">
                         <h5 class="product-name">Kitchenware 2</h5>
@@ -36,7 +36,7 @@ const products = ref(kitchenware);
                 </div>
             </router-link>
             <router-link :to="`/category/kitchenware/Kitchenware 3`">
-                <div class="product">
+                 <div class="product md:w-48 lg:w-48">
                     <img class="product-img" src="../assets/images/kit-3.jpg" alt="" />
                     <div class="p-5">
                         <h5 class="product-name">Kitchenware 3</h5>
@@ -47,7 +47,7 @@ const products = ref(kitchenware);
                 </div>
             </router-link>
             <router-link :to="`/category/kitchenware/Kitchenware 4`">
-                <div class="product">
+                 <div class="product md:w-48 lg:w-48">
                     <img class="product-img" src="../assets/images/kit-4.jpg" alt="" />
                     <div class="p-5">
                         <h5 class="product-name">Kitchenware 4</h5>
@@ -58,7 +58,7 @@ const products = ref(kitchenware);
                 </div>
             </router-link>
             <router-link :to="`/category/kitchenware/Kitchenware 5`">
-                <div class="product">
+                 <div class="product md:w-48 lg:w-48">
                     <img class="product-img" src="../assets/images/kit-5.jpg" alt="" />
                     <div class="p-5">
                         <h5 class="product-name">Kitchenware 5</h5>

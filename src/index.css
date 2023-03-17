@@ -156,7 +156,7 @@
 
 .product-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  width: 100%;
 }
 
 .product {
@@ -166,7 +166,7 @@
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   height: 100%;
-  width: 12rem;
+  width: 18rem;
   border-color: #decbb1;
   cursor: pointer;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
@@ -206,6 +206,7 @@
   background-color: #382a1d;
   color: #ffffff;
   margin-top: 1rem;
+  width: 100%;
 }
 
 .product-add-btn:hover {
