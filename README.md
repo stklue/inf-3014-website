@@ -1,1 +1,1 @@
-# Varsity project
+# Simple ecommerce website
